@@ -23,7 +23,7 @@ if st.button("🎯 Predict Final Grade (G3)"):
     
     if prediction  < 10:
         st.warning("⚠️ Student may need extra support or coaching.")
-    elif prediction >= 10:
+    elif prediction >= 10 and prediction < 15:
         st.success("Good! The student is performing Average.")
     else:
         st.balloons()
